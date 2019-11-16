@@ -1,5 +1,5 @@
---- º¯°æÇÒ²¨Áö·Õ----
-
+--- ë³€ê²½í• êº¼ì§€ë¡±----
+-- 
 
 
 CREATE TABLE movie
@@ -27,31 +27,31 @@ INCREMENT BY 1;
 --DROP SEQUENCE MOVIE_SEQ;
 /
 
-COMMENT ON TABLE MOVIE IS '¿µÈ­ Á¤º¸'
+COMMENT ON TABLE MOVIE IS 'ì˜í™” ì •ë³´'
 /
 
-COMMENT ON COLUMN MOVIE.movie_id IS '¿µÈ­ ¹øÈ£'
+COMMENT ON COLUMN MOVIE.movie_id IS 'ì˜í™” ë²ˆí˜¸'
 /
 
-COMMENT ON COLUMN MOVIE.movie_title IS '¿µÈ­ Á¦¸ñ'
+COMMENT ON COLUMN MOVIE.movie_title IS 'ì˜í™” ì œëª©'
 /
 
-COMMENT ON COLUMN MOVIE.movie_director IS '°¨µ¶'
+COMMENT ON COLUMN MOVIE.movie_director IS 'ê°ë…'
 /
 
-COMMENT ON COLUMN MOVIE.movie_actor IS 'ÁÖ¿¬ ¹è¿ì'
+COMMENT ON COLUMN MOVIE.movie_actor IS 'ì£¼ì—° ë°°ìš°'
 /
 
-COMMENT ON COLUMN MOVIE.movie_age IS '°ü¶÷ µî±Þ'
+COMMENT ON COLUMN MOVIE.movie_age IS 'ê´€ëžŒ ë“±ê¸‰'
 /
 
-COMMENT ON COLUMN MOVIE.movie_openday IS '°³ºÀ ÀÏ½Ã'
+COMMENT ON COLUMN MOVIE.movie_openday IS 'ê°œë´‰ ì¼ì‹œ'
 /
 
-COMMENT ON COLUMN MOVIE.movie_running_time IS '·¯´×Å¸ÀÓ'
+COMMENT ON COLUMN MOVIE.movie_running_time IS 'ëŸ¬ë‹íƒ€ìž„'
 /
 
-COMMENT ON COLUMN MOVIE.movie_summary IS '¿µÈ­ ÁÙ°Å¸®'
+COMMENT ON COLUMN MOVIE.movie_summary IS 'ì˜í™” ì¤„ê±°ë¦¬'
 /
 
 
@@ -76,19 +76,19 @@ INCREMENT BY 1;
 --DROP SEQUENCE MOVIE_SCHEDULE_SEQ;
 /
 
-COMMENT ON TABLE MOVIE_SCHEDULE IS '»ó¿µ ÀÏÁ¤'
+COMMENT ON TABLE MOVIE_SCHEDULE IS 'ìƒì˜ ì¼ì •'
 /
 
-COMMENT ON COLUMN MOVIE_SCHEDULE.screen_no IS '»ó¿µ ÀÏÁ¤ ¹øÈ£'
+COMMENT ON COLUMN MOVIE_SCHEDULE.screen_no IS 'ìƒì˜ ì¼ì • ë²ˆí˜¸'
 /
 
-COMMENT ON COLUMN MOVIE_SCHEDULE.screen_date IS '»ó¿µ ÀÏÀÚ'
+COMMENT ON COLUMN MOVIE_SCHEDULE.screen_date IS 'ìƒì˜ ì¼ìž'
 /
 
-COMMENT ON COLUMN MOVIE_SCHEDULE.screen_time IS '»ó¿µ ½Ã°£'
+COMMENT ON COLUMN MOVIE_SCHEDULE.screen_time IS 'ìƒì˜ ì‹œê°„'
 /
 
-COMMENT ON COLUMN MOVIE_SCHEDULE.movie_id IS '¿µÈ­ ¹øÈ£'
+COMMENT ON COLUMN MOVIE_SCHEDULE.movie_id IS 'ì˜í™” ë²ˆí˜¸'
 /
 
 ALTER TABLE MOVIE_SCHEDULE
@@ -121,25 +121,25 @@ INCREMENT BY 1;
 --DROP SEQUENCE CUSTOMER_SEQ;
 /
 
-COMMENT ON TABLE CUSTOMERS IS '°í°´ Á¤º¸'
+COMMENT ON TABLE CUSTOMERS IS 'ê³ ê° ì •ë³´'
 /
 
-COMMENT ON COLUMN CUSTOMERS.customer_no IS 'È¸¿ø ¹øÈ£'
+COMMENT ON COLUMN CUSTOMERS.customer_no IS 'íšŒì› ë²ˆí˜¸'
 /
 
 COMMENT ON COLUMN CUSTOMERS.customer_id IS 'UNIQUE'
 /
 
-COMMENT ON COLUMN CUSTOMERS.customer_pw IS 'È¸¿ø pw'
+COMMENT ON COLUMN CUSTOMERS.customer_pw IS 'íšŒì› pw'
 /
 
-COMMENT ON COLUMN CUSTOMERS.customer_name IS 'È¸¿ø ÀÌ¸§'
+COMMENT ON COLUMN CUSTOMERS.customer_name IS 'íšŒì› ì´ë¦„'
 /
 
-COMMENT ON COLUMN CUSTOMERS.customer_phone_no IS 'È¸¿ø ÀüÈ­¹øÈ£'
+COMMENT ON COLUMN CUSTOMERS.customer_phone_no IS 'íšŒì› ì „í™”ë²ˆí˜¸'
 /
 
-COMMENT ON COLUMN CUSTOMERS.customer_birth IS '»ý³â¿ùÀÏ'
+COMMENT ON COLUMN CUSTOMERS.customer_birth IS 'ìƒë…„ì›”ì¼'
 /
 
 
@@ -154,16 +154,16 @@ CREATE TABLE SEAT
 )
 /
 
-COMMENT ON TABLE SEAT IS 'ÁÂ¼®'
+COMMENT ON TABLE SEAT IS 'ì¢Œì„'
 /
 
-COMMENT ON COLUMN SEAT.seat_no IS 'ÁÂ¼® ¹øÈ£'
+COMMENT ON COLUMN SEAT.seat_no IS 'ì¢Œì„ ë²ˆí˜¸'
 /
 
-COMMENT ON COLUMN SEAT.screen_no IS '»ó¿µ ÀÏÁ¤ ¹øÈ£'
+COMMENT ON COLUMN SEAT.screen_no IS 'ìƒì˜ ì¼ì • ë²ˆí˜¸'
 /
 
-COMMENT ON COLUMN SEAT.movie_id IS '¿µÈ­ ¹øÈ£'
+COMMENT ON COLUMN SEAT.movie_id IS 'ì˜í™” ë²ˆí˜¸'
 /
 
 COMMENT ON COLUMN SEAT.seat_reserve IS 'check y/n'
@@ -204,25 +204,25 @@ INCREMENT BY 1;
 --DROP SEQUENCE TICKETING_SEQ;
 /
 
-COMMENT ON TABLE TICKETING IS '¿¹¸Å³»¿ª'
+COMMENT ON TABLE TICKETING IS 'ì˜ˆë§¤ë‚´ì—­'
 /
 
-COMMENT ON COLUMN TICKETING.booking_no IS '¿¹¸Å ¹øÈ£'
+COMMENT ON COLUMN TICKETING.booking_no IS 'ì˜ˆë§¤ ë²ˆí˜¸'
 /
 
-COMMENT ON COLUMN TICKETING.customer_no IS 'È¸¿ø ¹øÈ£'
+COMMENT ON COLUMN TICKETING.customer_no IS 'íšŒì› ë²ˆí˜¸'
 /
 
-COMMENT ON COLUMN TICKETING.ticket_price IS 'Æ¼ÄÏ °¡°Ý'
+COMMENT ON COLUMN TICKETING.ticket_price IS 'í‹°ì¼“ ê°€ê²©'
 /
 
-COMMENT ON COLUMN TICKETING.ticket_no IS 'Æ¼ÄÏ ¸Å¼ö'
+COMMENT ON COLUMN TICKETING.ticket_no IS 'í‹°ì¼“ ë§¤ìˆ˜'
 /
 
-COMMENT ON COLUMN TICKETING.seat_no IS 'ÁÂ¼® ¹øÈ£'
+COMMENT ON COLUMN TICKETING.seat_no IS 'ì¢Œì„ ë²ˆí˜¸'
 /
 
-COMMENT ON COLUMN TICKETING.screen_no IS '»ó¿µ ÀÏÁ¤ ¹øÈ£'
+COMMENT ON COLUMN TICKETING.screen_no IS 'ìƒì˜ ì¼ì • ë²ˆí˜¸'
 /
 
 ALTER TABLE TICKETING
@@ -244,13 +244,13 @@ CREATE TABLE PAYMENT
 )
 /
 
-COMMENT ON TABLE PAYMENT IS '°áÁ¦'
+COMMENT ON TABLE PAYMENT IS 'ê²°ì œ'
 /
 
-COMMENT ON COLUMN PAYMENT.booking_no IS '¿¹¸Å ¹øÈ£'
+COMMENT ON COLUMN PAYMENT.booking_no IS 'ì˜ˆë§¤ ë²ˆí˜¸'
 /
 
-COMMENT ON COLUMN PAYMENT.booking_date IS '°áÁ¦ ÀÏÀÚ'
+COMMENT ON COLUMN PAYMENT.booking_date IS 'ê²°ì œ ì¼ìž'
 /
 
 COMMENT ON COLUMN PAYMENT.payment_confirm IS 'check y/n'
@@ -276,13 +276,13 @@ CREATE TABLE ADMIN
 )
 /
 
-COMMENT ON TABLE ADMIN IS '°ü¸®ÀÚ'
+COMMENT ON TABLE ADMIN IS 'ê´€ë¦¬ìž'
 /
 
-COMMENT ON COLUMN ADMIN.admin_id IS '°ü¸®ÀÚ id'
+COMMENT ON COLUMN ADMIN.admin_id IS 'ê´€ë¦¬ìž id'
 /
 
-COMMENT ON COLUMN ADMIN.admin_pw IS '°ü¸®ÀÚ pw'
+COMMENT ON COLUMN ADMIN.admin_pw IS 'ê´€ë¦¬ìž pw'
 /
 
 
@@ -307,12 +307,12 @@ ALTER TABLE ticketing
         
 
 
--- °ü¸®ÀÚ
+-- ê´€ë¦¬ìž
 
 INSERT INTO admin VALUES ('abc', '1234');
 
 
--- °í°´Á¤º¸
+-- ê³ ê°ì •ë³´
 
 INSERT INTO CUSTOMERS VALUES (customer_seq.nextval, 'abcd', '1234', 'LeeYuri', '01012341234', '19940204');
 
@@ -327,24 +327,24 @@ INSERT INTO CUSTOMERS VALUES (customer_seq.nextval, 'hihihi', '4564', 'LeeYoungc
 INSERT INTO CUSTOMERS VALUES (customer_seq.nextval, 'hehehe', '1111', 'KimIntae', '01014123213', '19880508');
 
 
--- ¿µÈ­Á¤º¸
+-- ì˜í™”ì •ë³´
 
-INSERT INTO MOVIE VALUES (movie_seq.nextval, '¾îº¥Á®½º3', '¾È¼Ò´Ï ·ç¼Ò', '·Î¹öÆ® ´Ù¿ì´Ï ÁÖ´Ï¾î', 15, '190302', 130, '¿ª´ë ÃÖ°­ ºô·± Å¸³ë½º¿¡ ¸Â¼­ ¼¼°èÀÇ ¿î¸íÀÌ °É¸° ´ë°áÀÌ ÆîÃÄÁö´Âµ¥...' );
+INSERT INTO MOVIE VALUES (movie_seq.nextval, 'ì–´ë²¤ì ¸ìŠ¤3', 'ì•ˆì†Œë‹ˆ ë£¨ì†Œ', 'ë¡œë²„íŠ¸ ë‹¤ìš°ë‹ˆ ì£¼ë‹ˆì–´', 15, '190302', 130, 'ì—­ëŒ€ ìµœê°• ë¹ŒëŸ° íƒ€ë…¸ìŠ¤ì— ë§žì„œ ì„¸ê³„ì˜ ìš´ëª…ì´ ê±¸ë¦° ëŒ€ê²°ì´ íŽ¼ì³ì§€ëŠ”ë°...' );
 
-INSERT INTO MOVIE VALUES (movie_seq.nextval, 'µ·', '¹Ú´©¸®', '·ùÁØ¿­', 15, '190405', 150, 'Èë¼öÀú Áõ±Ç¸Ç, µ·ÀÇ Çâ¶ô¿¡ ºüÁ®µé´Ù.');
+INSERT INTO MOVIE VALUES (movie_seq.nextval, 'ëˆ', 'ë°•ëˆ„ë¦¬', 'ë¥˜ì¤€ì—´', 15, '190405', 150, 'í™ìˆ˜ì € ì¦ê¶Œë§¨, ëˆì˜ í–¥ë½ì— ë¹ ì ¸ë“¤ë‹¤.');
 
-INSERT INTO MOVIE VALUES (movie_seq.nextval, '¾î½º', 'Á¶´ø ÇÊ', '·çÇÇÅ¸ ´¨¿À', 19, '190105', 140, '¿ì¸®´Â ´©±¸ÀÎ°¡?  ¾ö¸¶, ¾Æºü, µþ, ¾Æµé...' );
+INSERT INTO MOVIE VALUES (movie_seq.nextval, 'ì–´ìŠ¤', 'ì¡°ë˜ í•„', 'ë£¨í”¼íƒ€ ë‡½ì˜¤', 19, '190105', 140, 'ìš°ë¦¬ëŠ” ëˆ„êµ¬ì¸ê°€?  ì—„ë§ˆ, ì•„ë¹ , ë”¸, ì•„ë“¤...' );
 
-INSERT INTO MOVIE VALUES (movie_seq.nextval, '»ýÀÏ', 'ÀÌÁ¾¾ð', '¼³°æ±¸', 12, '190223', 110,'2014³â 4¿ù ÀÌÈÄ... ³²°ÜÁø ¿ì¸®µéÀÇ ÀÌ¾ß±â');
+INSERT INTO MOVIE VALUES (movie_seq.nextval, 'ìƒì¼', 'ì´ì¢…ì–¸', 'ì„¤ê²½êµ¬', 12, '190223', 110,'2014ë…„ 4ì›” ì´í›„... ë‚¨ê²¨ì§„ ìš°ë¦¬ë“¤ì˜ ì´ì•¼ê¸°');
 
-INSERT INTO MOVIE VALUES (movie_seq.nextval, '³ëÆÃÈú', '·ÎÀú ¹ÌÃ¿', 'ÁÙ¸®¾Æ ·Î¹öÃ÷', 12, '990703', 110, '¾ÆÁÖ Æò¹üÇÑ »ç¶ûÀ» ±â´Ù¸®´Â ±×³à¿Í ³Ê¹« Æ¯º°ÇÑ »ç¶ûÀÌ µÎ·Á¿î ±×ÀÇ 
- ²Þ °°Àº ·Î¸Ç½º');
+INSERT INTO MOVIE VALUES (movie_seq.nextval, 'ë…¸íŒ…íž', 'ë¡œì € ë¯¸ì²¼', 'ì¤„ë¦¬ì•„ ë¡œë²„ì¸ ', 12, '990703', 110, 'ì•„ì£¼ í‰ë²”í•œ ì‚¬ëž‘ì„ ê¸°ë‹¤ë¦¬ëŠ” ê·¸ë…€ì™€ ë„ˆë¬´ íŠ¹ë³„í•œ ì‚¬ëž‘ì´ ë‘ë ¤ìš´ ê·¸ì˜ 
+ ê¿ˆ ê°™ì€ ë¡œë§¨ìŠ¤');
 
-INSERT INTO MOVIE VALUES (movie_seq.nextval, '»ìÀÎÀÇ Ãß¾ï', 'ºÀÁØÈ£', '¼Û°­È£', 15, '030502', 130, '´ç½ÅÀº Áö±Ý ¾îµð¿¡ ÀÖ´Â°¡ ¹ÌÄ¡µµ·Ï Àâ°í ½Í¾ú´Ù. ');
+INSERT INTO MOVIE VALUES (movie_seq.nextval, 'ì‚´ì¸ì˜ ì¶”ì–µ', 'ë´‰ì¤€í˜¸', 'ì†¡ê°•í˜¸', 15, '030502', 130, 'ë‹¹ì‹ ì€ ì§€ê¸ˆ ì–´ë””ì— ìžˆëŠ”ê°€ ë¯¸ì¹˜ë„ë¡ ìž¡ê³  ì‹¶ì—ˆë‹¤. ');
 
 
 
--- »ó¿µ ÀÏÁ¤
+-- ìƒì˜ ì¼ì •
 
 insert into movie_schedule(screen_no, screen_date, screen_time, movie_id)
 values(MOVIE_SCHEDULE_SEQ.nextval, '19/01/01',to_date('13:30', 'HH24:MI'),1);
@@ -375,16 +375,16 @@ INSERT INTO MOVIE_SCHEDULE VALUES (movie_schedule_seq.nextval, '190501', to_date
 
 
 
--- ¿¹¸Å³»¿ª
+-- ì˜ˆë§¤ë‚´ì—­
 
 
 
--- ÁÂ¼®
+-- ì¢Œì„
 
 
 
 
--- °áÁ¦
+-- ê²°ì œ
 
 commit
 
